@@ -83,13 +83,7 @@ def main():
     input_Tid = input("티스토리 ID를 입력해주세요 : ")
     input_Tpw = input("티스토리 PW를 입력해주세요 : ")
     input_Turl = input("티스토리 URL을 입력해주세요 : ")  
-    Nid = "moneym0814"
-    Npw = "ajsl12qw!@1"
-    Nurl = "https://cafe.naver.com/ca-fe/cafes/29470508/menus/229/articles/write?boardType=L"
-    Tid = "moneymachine.vip@gmail.com"
-    Tpw = "money1366"
-    Turl = ["stockstudy-ipo"]
-    input_dict = {'Nid':Nid,'Npw':Npw,'Nurl':Nurl,'Tid':Tid,'Tpw':Tpw,'Turl':Turl,'proxy':input_Nproxy, 'term':input_term}
+    input_dict = {'Nid':input_Nid,'Npw':input_Npw,'Nurl':input_Nurl,'Tid':input_Tid,'Tpw':input_Tpw,'Turl':input_Turl,'proxy':input_Nproxy, 'term':input_term}
     print(f"카페 포스팅은 매주 {input_day_of_week} {input_hour}시{input_minute}분 에 {input_Nid} / {input_Npw} 로 {input_Nurl} 에  {input_Nproxy}.txt 사용해 포스팅 진행합니다.")
     print(f"티스토리 포스팅은 매일 {input_hour}시{input_minute}분 에 {input_Tid} / {input_Tpw} 로 {input_Turl} 에 포스팅 진행합니다.")
     try:
